@@ -6,10 +6,13 @@ import java.util.ResourceBundle;
 import application.Main;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.event.EventType;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.input.MouseEvent;
+
 
 public class LowerCaseController implements Initializable {
 
@@ -23,6 +26,13 @@ public class LowerCaseController implements Initializable {
 	public void initialize(URL location, ResourceBundle resources) {
 		// x ->  Wyra¿enie lambda java 8 
 		//Button.setOnAction(x -> Text.setText(Text.getText().toLowerCase()));
+		
+		   Button.addEventFilter(MouseEvent.MOUSE_ENTERED, new EventHandler<MouseEvent>() {
+		        @Override
+		        public void handle(MouseEvent event) {
+		            System.out.println("Wjazd na przycisk");
+		        }
+		    });
 
 		Button.setOnAction(new EventHandler<ActionEvent>() {
 
@@ -54,6 +64,7 @@ public class LowerCaseController implements Initializable {
 
 			}
 		});
+		
 
 	}
 
