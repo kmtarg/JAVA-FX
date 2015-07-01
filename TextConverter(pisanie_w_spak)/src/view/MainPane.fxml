@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.AppController">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <Button fx:id="Button" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Button" BorderPane.alignment="CENTER" />
+         </bottom>
+         <left>
+            <TextArea fx:id="Text1" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </BorderPane.margin>
+            </TextArea>
+         </left>
+         <right>
+            <TextArea fx:id="Text2" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" />
+               </BorderPane.margin>
+            </TextArea>
+         </right>
+      </BorderPane>
+   </center>
+</BorderPane>

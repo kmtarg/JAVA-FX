@@ -33,6 +33,7 @@ public class LowerCaseController implements Initializable {
 		            System.out.println("Wjazd na przycisk");
 		        }
 		    });
+		   Button.addEventFilter(MouseEvent.MOUSE_MOVED, x -> System.out.println(" przejazd wyszk¹ nad przyciskiem "));
 
 		Button.setOnAction(new EventHandler<ActionEvent>() {
 
