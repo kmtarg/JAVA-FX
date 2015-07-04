@@ -6,14 +6,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-
-<VBox prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppController">
+<VBox prefWidth="400.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppController">
    <children>
       <Button fx:id="Button" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="446.0" text="Czyść" />
       <HBox>
          <children>
-            <TextArea fx:id="Text1" />
-            <TextArea fx:id="Text2" />
+            <TextArea id="TextLewy" fx:id="Text1" />
+            <TextArea id="TextPrawy" fx:id="Text2" />
          </children>
       </HBox>
    </children>
