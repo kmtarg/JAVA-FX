@@ -21,3 +21,22 @@
 #TextPrawy .scroll-pane .viewport .content {
     -fx-background-color: #000000;
 }
+.text-area,
+.text-area:focused,
+.text-area:focused .scroll-pane,
+.text-area:focused .scroll-pane .viewport .content {
+    -fx-background-color: #dddddd;
+    -fx-font-family: 'Comic Sans MS';
+    -fx-font-size: 13;
+}
+ 
+.button {
+    -fx-background-color: transparent;
+   
+    -fx-background-size: 100%;
+    -fx-background-position: center;
+}
+ 
+.button:hover {
+    -fx-opacity: 0.3;
+}
